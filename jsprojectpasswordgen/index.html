@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       
+        <!-- heading of main container -->
+         <div>
+            <h1>Password Generator</h1>
+         </div>
+         <!-- where password will be shown -->
+          <div class="pass-shower">
+            <input  readonly placeholder="password" password-display  class="display">
+            <button copyButton class="copy-Btn">
+                <span data-copyMSG class="tooltip" ></span>
+                <img src="copy.png" alt="copy" width="20" height="20">
+            </button>
+          </div> 
+          <!-- main container where password range will be selcted -->
+           <div class="main-container">
+            <!-- length selecter of password -->
+            <div class="length-selector">
+                <p>Password Length</p>
+                <p pass-length>0</p>
+                
+            </div> 
+            <input type="range" min="1" max="20" step="1" class="slider" passwordLength>
+
+            <!-- checkboxes-->
+             <div class="check">
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Include Uppercase Letters</label>
+             </div>
+                
+             <div class="check">
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Include Lowercase Letters</label>
+             </div>
+               
+            <div class="check">
+                <input type="checkbox" id="numbers">
+                <label for="numbers">Include Numbers</label>
+             </div>
+
+             <div class="check">
+                <input type="checkbox" id="symbols">
+                <label for="Symbols">Include Symbols</label>
+             </div>
+
+            <!-- strength indicator -->
+             <div class="strength-container">
+                <p>Strength</p>
+                <div strengthshower class="indicator"></div>
+             </div>
+              
+             <button class="Generate-button">Generate Password</button>
+           </div>
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

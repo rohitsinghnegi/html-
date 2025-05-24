@@ -1,0 +1,29 @@
+.maincontainer{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(112, 108, 108);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ .container{
+    
+    display: flex;
+    background-color: white;
+    margin: 2rem; 
+    padding: 2rem;
+    gap: 2rem;
+
+ }
+ .incre{
+    
+    color: aqua;
+ }
+ #button{
+      font-size: larger;
+ }
+ .zero{
+    font-size: larger;
+    
+ }
